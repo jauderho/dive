@@ -50,7 +50,6 @@ github.com/alecthomas/units v0.0.0-20151022065526-2efee857e7cf/go.mod h1:ybxpYRF
 github.com/armon/consul-api v0.0.0-20180202201655-eb2c6b5be1b6/go.mod h1:grANhF5doyWs3UAsr3K4I6qtAmlQcZDesFNEHPZAzj8=
 github.com/awesome-gocui/gocui v0.6.0 h1:hhDJiQC12tEsJNJ+iZBBVaSSLFYo9llFuYpQlL5JZVI=
 github.com/awesome-gocui/gocui v0.6.0/go.mod h1:1QikxFaPhe2frKeKvEwZEIGia3haiOxOUXKinrv17mA=
-github.com/awesome-gocui/keybinding v1.0.0/go.mod h1:z0TyCwIhaT97yU+becTse8Dqh2CvYT0FLw0R0uTk0ag=
 github.com/awesome-gocui/keybinding v1.0.1-0.20190805183143-864552bd36b7 h1:DDdWoFOtXWySkgCiGGn80TM/E2FS2T1qJBJJxup9+Vo=
 github.com/awesome-gocui/keybinding v1.0.1-0.20190805183143-864552bd36b7/go.mod h1:z0TyCwIhaT97yU+becTse8Dqh2CvYT0FLw0R0uTk0ag=
 github.com/awesome-gocui/termbox-go v0.0.0-20190427202837-c0aef3d18bcc h1:wGNpKcHU8Aadr9yOzsT3GEsFLS7HQu8HxQIomnekqf0=
@@ -331,8 +330,8 @@ github.com/subosito/gotenv v1.4.2/go.mod h1:ayKnFf/c6rvx/2iiLrJUk1e6plDbT3edrFNG
 github.com/tmc/grpc-websocket-proxy v0.0.0-20190109142713-0ad062ec5ee5/go.mod h1:ncp9v5uamzpCO7NfCPTXjqaC+bZgJeR0sMTm6dMHP7U=
 github.com/ugorji/go v1.1.4/go.mod h1:uQMGLiO92mf5W77hV/PUCpI3pbzQx3CRekS0kk+RGrc=
 github.com/ugorji/go/codec v0.0.0-20181204163529-d75b2dcb6bc8/go.mod h1:VFNgLljTbGfSG7qAOspJ7OScBnGdDN/yBr0sguwnwf0=
-github.com/wagoodman/dive v0.10.1 h1:bohvpP2vR3mOrqAkakGBmeXQoB6TB9tkUlVF097gq38=
-github.com/wagoodman/dive v0.10.1/go.mod h1:KknWFOpDragAuCtBIEU1nvMOIBmDRnh9VdgOAwzyvwM=
+github.com/wagoodman/dive v0.11.0 h1:DxTy1fNdLaZ/If7k0DnxEZv+HOR8KU15h16oNHL2f8A=
+github.com/wagoodman/dive v0.11.0/go.mod h1:6DxPp8H+B0ybSYwXeQGKukYGNy3LNh4c9JQ9QQWZCHw=
 github.com/xiang90/probing v0.0.0-20190116061207-43a291ad63a2/go.mod h1:UETIi67q53MR2AWcXfiuqkDkRtnGDLqkBTpCHuJHxtU=
 github.com/xordataexchange/crypt v0.0.3-0.20170626215501-b2862e3d0a77/go.mod h1:aYKd//L2LvnjZzWKhF00oedf4jCCReLcmhLdhm1A27Q=
 github.com/yuin/goldmark v1.1.25/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
