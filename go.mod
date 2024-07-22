@@ -8,8 +8,8 @@ require (
 	github.com/awesome-gocui/gocui v1.1.0
 	github.com/awesome-gocui/keybinding v1.0.1-0.20190805183143-864552bd36b7
 	github.com/cespare/xxhash v1.1.0
-	github.com/docker/cli v27.0.3+incompatible
-	github.com/docker/docker v27.0.3+incompatible
+	github.com/docker/cli v27.1.0+incompatible
+	github.com/docker/docker v27.1.0+incompatible
 	github.com/dustin/go-humanize v1.0.1
 	github.com/fatih/color v1.17.0
 	github.com/google/uuid v1.6.0
@@ -44,7 +44,7 @@ require (
 	github.com/magiconair/properties v1.8.7 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
-	github.com/mattn/go-runewidth v0.0.15 // indirect
+	github.com/mattn/go-runewidth v0.0.16 // indirect
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
 	github.com/moby/docker-image-spec v1.3.1 // indirect
 	github.com/moby/term v0.5.0 // indirect
