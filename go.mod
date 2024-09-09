@@ -1,6 +1,6 @@
 module github.com/wagoodman/dive
 
-go 1.21.0
+go 1.22.0
 
 toolchain go1.22.2
 
@@ -8,8 +8,8 @@ require (
 	github.com/awesome-gocui/gocui v1.1.0
 	github.com/awesome-gocui/keybinding v1.0.1-0.20190805183143-864552bd36b7
 	github.com/cespare/xxhash v1.1.0
-	github.com/docker/cli v27.2.0+incompatible
-	github.com/docker/docker v27.2.0+incompatible
+	github.com/docker/cli v27.2.1+incompatible
+	github.com/docker/docker v27.2.1+incompatible
 	github.com/dustin/go-humanize v1.0.1
 	github.com/fatih/color v1.17.0
 	github.com/google/uuid v1.6.0
@@ -67,7 +67,7 @@ require (
 	go.opentelemetry.io/otel/sdk v1.26.0 // indirect
 	go.opentelemetry.io/otel/trace v1.29.0 // indirect
 	go.uber.org/multierr v1.11.0 // indirect
-	golang.org/x/exp v0.0.0-20240904232852-e7e105dedf7e // indirect
+	golang.org/x/exp v0.0.0-20240909161429-701f63a606c0 // indirect
 	golang.org/x/sys v0.25.0 // indirect
 	golang.org/x/term v0.24.0 // indirect
 	golang.org/x/text v0.18.0 // indirect
