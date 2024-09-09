@@ -2,7 +2,7 @@ module github.com/wagoodman/dive
 
 go 1.22.0
 
-toolchain go1.22.2
+toolchain go1.23.1
 
 require (
 	github.com/awesome-gocui/gocui v1.1.0
