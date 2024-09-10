@@ -1,4 +1,4 @@
-FROM alpine:3.20.3@sha256:f8a1876b0b56c6e7da87058d47dde1bf5707b74fc6a504031cd9cf6303c89305
+FROM alpine:3.20.3@sha256:beefdbd8a1da6d2915566fde36db9db0b524eb737fc57cd1367effd16dc0d06d
 
 ARG DOCKER_CLI_VERSION=${DOCKER_CLI_VERSION}
 RUN wget -O- https://download.docker.com/linux/static/stable/$(uname -m)/docker-${DOCKER_CLI_VERSION}.tgz | \
