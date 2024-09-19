@@ -21,21 +21,9 @@
 package main
 
 import (
-	"github.com/wagoodman/dive/cmd"
-)
-
-var (
-	version   = "No version provided"
-	commit    = "No commit provided"
-	buildTime = "No build timestamp provided"
+	"github.com/jauderho/dive/cmd"
 )
 
 func main() {
-	cmd.SetVersion(&cmd.Version{
-		Version:   version,
-		Commit:    commit,
-		BuildTime: buildTime,
-	})
-
 	cmd.Execute()
 }

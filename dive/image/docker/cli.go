@@ -5,7 +5,7 @@ import (
 	"os"
 	"os/exec"
 
-	"github.com/wagoodman/dive/utils"
+	"github.com/jauderho/dive/utils"
 )
 
 // runDockerCmd runs a given Docker command in the current tty

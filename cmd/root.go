@@ -12,8 +12,8 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 
-	"github.com/wagoodman/dive/dive"
-	"github.com/wagoodman/dive/dive/filetree"
+	"github.com/jauderho/dive/dive"
+	"github.com/jauderho/dive/dive/filetree"
 )
 
 var cfgFile string

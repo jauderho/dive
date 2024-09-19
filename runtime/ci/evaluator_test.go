@@ -6,7 +6,7 @@ import (
 
 	"github.com/spf13/viper"
 
-	"github.com/wagoodman/dive/dive/image/docker"
+	"github.com/jauderho/dive/dive/image/docker"
 )
 
 func Test_Evaluator(t *testing.T) {
