@@ -104,7 +104,7 @@ jobs:
   Acceptance-Mac:
     name: "Acceptance tests (Mac)"
     needs: [ Build-Snapshot-Artifacts ]
-    runs-on: macos-latest
+    runs-on: macos-15
     steps:
 
       - uses: actions/checkout@master
