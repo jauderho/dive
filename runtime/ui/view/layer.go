@@ -7,10 +7,10 @@ import (
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/viper"
 
-	"github.com/wagoodman/dive/dive/image"
-	"github.com/wagoodman/dive/runtime/ui/format"
-	"github.com/wagoodman/dive/runtime/ui/key"
-	"github.com/wagoodman/dive/runtime/ui/viewmodel"
+	"github.com/jauderho/dive/dive/image"
+	"github.com/jauderho/dive/runtime/ui/format"
+	"github.com/jauderho/dive/runtime/ui/key"
+	"github.com/jauderho/dive/runtime/ui/viewmodel"
 )
 
 // Layer holds the UI objects and data models for populating the lower-left pane.

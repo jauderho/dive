@@ -10,9 +10,9 @@ import (
 	"github.com/fatih/color"
 	"github.com/sergi/go-diff/diffmatchpatch"
 
-	"github.com/wagoodman/dive/dive/filetree"
-	"github.com/wagoodman/dive/dive/image/docker"
-	"github.com/wagoodman/dive/runtime/ui/format"
+	"github.com/jauderho/dive/dive/filetree"
+	"github.com/jauderho/dive/dive/image/docker"
+	"github.com/jauderho/dive/runtime/ui/format"
 )
 
 const allowTestDataCapture = false

@@ -24,7 +24,7 @@ brews:
       owner: wagoodman
       name: homebrew-dive
       token: "{{.Env.TAP_GITHUB_TOKEN}}"
-    homepage: "https://github.com/wagoodman/dive/"
+    homepage: "https://github.com/jauderho/dive/"
     description: "A tool for exploring layers in a docker image"
 
 archives:
@@ -36,7 +36,7 @@ archives:
 nfpms:
   - license: MIT
     maintainer: Alex Goodman
-    homepage: https://github.com/wagoodman/dive/
+    homepage: https://github.com/jauderho/dive/
     description: "A tool for exploring layers in a docker image"
     formats:
       - rpm

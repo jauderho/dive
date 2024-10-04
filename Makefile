@@ -16,7 +16,7 @@ DOCKER_CLI_VERSION = 23.0.6
 
 # Command templates #################################
 LINT_CMD = $(TEMP_DIR)/golangci-lint run --tests=false --timeout=2m --config .golangci.yaml
-GOIMPORTS_CMD = $(TEMP_DIR)/gosimports -local github.com/wagoodman
+GOIMPORTS_CMD = $(TEMP_DIR)/gosimports -local github.com/jauderho
 RELEASE_CMD = DOCKER_CLI_VERSION=$(DOCKER_CLI_VERSION) $(TEMP_DIR)/goreleaser release --clean
 SNAPSHOT_CMD = $(RELEASE_CMD) --skip-publish --snapshot --skip-sign
 CHRONICLE_CMD = $(TEMP_DIR)/chronicle
