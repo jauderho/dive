@@ -1,4 +1,4 @@
-# dive
+# dive (FORKED)
 [![GitHub release](https://img.shields.io/github/release/wagoodman/dive.svg)](https://github.com/jauderho/dive/releases/latest)
 [![Validations](https://github.com/jauderho/dive/actions/workflows/validations.yaml/badge.svg)](https://github.com/jauderho/dive/actions/workflows/validations.yaml)
 [![Go Report Card](https://goreportcard.com/badge/github.com/jauderho/dive)](https://goreportcard.com/report/github.com/jauderho/dive)
