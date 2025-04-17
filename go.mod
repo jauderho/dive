@@ -1,15 +1,13 @@
 module github.com/jauderho/dive
 
-go 1.23.0
-
-toolchain go1.24.1
+go 1.24.2
 
 require (
 	github.com/awesome-gocui/gocui v1.1.0
 	github.com/awesome-gocui/keybinding v1.0.1-0.20190805183143-864552bd36b7
 	github.com/cespare/xxhash v1.1.0
-	github.com/docker/cli v28.0.4+incompatible
-	github.com/docker/docker v28.0.4+incompatible
+	github.com/docker/cli v28.1.0+incompatible
+	github.com/docker/docker v28.1.0+incompatible
 	github.com/dustin/go-humanize v1.0.1
 	github.com/fatih/color v1.18.0
 	github.com/google/uuid v1.6.0
@@ -32,7 +30,7 @@ require (
 	github.com/docker/go-connections v0.5.0 // indirect
 	github.com/docker/go-units v0.5.0 // indirect
 	github.com/felixge/httpsnoop v1.0.4 // indirect
-	github.com/fsnotify/fsnotify v1.8.0 // indirect
+	github.com/fsnotify/fsnotify v1.9.0 // indirect
 	github.com/gdamore/encoding v1.0.1 // indirect
 	github.com/gdamore/tcell/v2 v2.8.1 // indirect
 	github.com/go-logr/logr v1.4.2 // indirect
@@ -45,11 +43,12 @@ require (
 	github.com/mattn/go-isatty v0.0.20 // indirect
 	github.com/mattn/go-runewidth v0.0.16 // indirect
 	github.com/moby/docker-image-spec v1.3.1 // indirect
+	github.com/moby/sys/atomicwriter v0.1.0 // indirect
 	github.com/moby/term v0.5.0 // indirect
 	github.com/morikuni/aec v1.0.0 // indirect
 	github.com/opencontainers/go-digest v1.0.0 // indirect
 	github.com/opencontainers/image-spec v1.1.1 // indirect
-	github.com/pelletier/go-toml/v2 v2.2.3 // indirect
+	github.com/pelletier/go-toml/v2 v2.2.4 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/rivo/uniseg v0.4.7 // indirect
 	github.com/sagikazarmark/locafero v0.9.0 // indirect
