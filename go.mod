@@ -7,7 +7,7 @@ require (
 	github.com/awesome-gocui/keybinding v1.0.1-0.20190805183143-864552bd36b7
 	github.com/cespare/xxhash v1.1.0
 	github.com/docker/cli v28.1.1+incompatible
-	github.com/docker/docker v28.1.1+incompatible
+	github.com/docker/docker v28.2.1+incompatible
 	github.com/dustin/go-humanize v1.0.1
 	github.com/fatih/color v1.18.0
 	github.com/google/uuid v1.6.0
@@ -25,6 +25,8 @@ require (
 
 require (
 	github.com/Microsoft/go-winio v0.6.2 // indirect
+	github.com/containerd/errdefs v1.0.0 // indirect
+	github.com/containerd/errdefs/pkg v0.3.0 // indirect
 	github.com/containerd/log v0.1.0 // indirect
 	github.com/distribution/reference v0.6.0 // indirect
 	github.com/docker/go-connections v0.5.0 // indirect
