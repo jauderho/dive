@@ -173,7 +173,7 @@ tasks:
       - tmpdir
     vars:
       TEST_PKGS:
-        sh: "go list ./... | grep -v '^github.com/wagoodman/dive/cmd/dive/cli$'  | tr '\n' ' '"
+        sh: "go list ./... | grep -v '^github.com/jauderho/dive/cmd/dive/cli$'  | tr '\n' ' '"
 
       # unit test coverage threshold (in % coverage)
       COVERAGE_THRESHOLD: 25
@@ -185,7 +185,7 @@ tasks:
   cli:
     desc: Run CLI tests
     cmds:
-      - "go test github.com/wagoodman/dive/cmd/dive/cli -v"
+      - "go test github.com/jauderho/dive/cmd/dive/cli -v"
 
   ## Acceptance tests #################################
 

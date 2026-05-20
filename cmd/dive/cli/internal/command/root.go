@@ -7,12 +7,12 @@ import (
 	"github.com/anchore/clio"
 	"github.com/spf13/afero"
 	"github.com/spf13/cobra"
-	"github.com/wagoodman/dive/cmd/dive/cli/internal/command/adapter"
-	"github.com/wagoodman/dive/cmd/dive/cli/internal/options"
-	"github.com/wagoodman/dive/cmd/dive/cli/internal/ui"
-	"github.com/wagoodman/dive/dive"
-	"github.com/wagoodman/dive/dive/image"
-	"github.com/wagoodman/dive/internal/bus"
+	"github.com/jauderho/dive/cmd/dive/cli/internal/command/adapter"
+	"github.com/jauderho/dive/cmd/dive/cli/internal/options"
+	"github.com/jauderho/dive/cmd/dive/cli/internal/ui"
+	"github.com/jauderho/dive/dive"
+	"github.com/jauderho/dive/dive/image"
+	"github.com/jauderho/dive/internal/bus"
 	"os"
 )
 

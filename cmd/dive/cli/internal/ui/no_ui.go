@@ -1,7 +1,7 @@
 package ui
 
 import (
-	"github.com/wagoodman/go-partybus"
+	"github.com/jauderho/go-partybus"
 
 	"github.com/anchore/clio"
 )

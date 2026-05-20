@@ -3,7 +3,7 @@ package utils
 import (
 	"errors"
 	"github.com/awesome-gocui/gocui"
-	"github.com/wagoodman/dive/internal/log"
+	"github.com/jauderho/dive/internal/log"
 )
 
 // IsNewView determines if a view has already been created based on the set of errors given (a bit hokie)

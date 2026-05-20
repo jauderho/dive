@@ -2,7 +2,7 @@ package options
 
 import (
 	"github.com/anchore/clio"
-	"github.com/wagoodman/dive/cmd/dive/cli/internal/ui/v1/key"
+	"github.com/jauderho/dive/cmd/dive/cli/internal/ui/v1/key"
 	"reflect"
 )
 

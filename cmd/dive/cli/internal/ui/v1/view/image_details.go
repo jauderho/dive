@@ -3,15 +3,15 @@ package view
 import (
 	"fmt"
 	"github.com/anchore/go-logger"
-	"github.com/wagoodman/dive/cmd/dive/cli/internal/ui/v1/format"
-	"github.com/wagoodman/dive/cmd/dive/cli/internal/ui/v1/key"
-	"github.com/wagoodman/dive/internal/log"
+	"github.com/jauderho/dive/cmd/dive/cli/internal/ui/v1/format"
+	"github.com/jauderho/dive/cmd/dive/cli/internal/ui/v1/key"
+	"github.com/jauderho/dive/internal/log"
 	"strconv"
 	"strings"
 
 	"github.com/awesome-gocui/gocui"
 	"github.com/dustin/go-humanize"
-	"github.com/wagoodman/dive/dive/filetree"
+	"github.com/jauderho/dive/dive/filetree"
 )
 
 type ImageDetails struct {

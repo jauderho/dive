@@ -5,7 +5,7 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/wagoodman/dive/cmd/dive/cli/internal/ui/v1"
+	"github.com/jauderho/dive/cmd/dive/cli/internal/ui/v1"
 	"go.uber.org/atomic"
 	"os"
 	"os/exec"
@@ -14,8 +14,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/wagoodman/dive/dive/filetree"
-	"github.com/wagoodman/dive/dive/image/docker"
+	"github.com/jauderho/dive/dive/filetree"
+	"github.com/jauderho/dive/dive/image/docker"
 )
 
 var repoRootCache atomic.String

@@ -3,7 +3,7 @@ package filetree
 import (
 	"archive/tar"
 	"fmt"
-	"github.com/wagoodman/dive/internal/log"
+	"github.com/jauderho/dive/internal/log"
 	"strings"
 
 	"github.com/dustin/go-humanize"

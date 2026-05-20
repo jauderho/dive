@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"github.com/anchore/clio"
 	"github.com/scylladb/go-set/strset"
-	"github.com/wagoodman/dive/dive"
-	"github.com/wagoodman/dive/internal/log"
+	"github.com/jauderho/dive/dive"
+	"github.com/jauderho/dive/internal/log"
 	"strings"
 )
 

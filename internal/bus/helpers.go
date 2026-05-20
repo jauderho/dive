@@ -1,11 +1,11 @@
 package bus
 
 import (
-	"github.com/wagoodman/dive/dive/image"
-	"github.com/wagoodman/dive/internal/bus/event"
-	"github.com/wagoodman/dive/internal/bus/event/payload"
-	"github.com/wagoodman/go-partybus"
-	"github.com/wagoodman/go-progress"
+	"github.com/jauderho/dive/dive/image"
+	"github.com/jauderho/dive/internal/bus/event"
+	"github.com/jauderho/dive/internal/bus/event/payload"
+	"github.com/jauderho/go-partybus"
+	"github.com/jauderho/go-progress"
 )
 
 func Report(report string) {

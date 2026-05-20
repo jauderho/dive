@@ -6,7 +6,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/wagoodman/dive/dive/image"
+	"github.com/jauderho/dive/dive/image"
 )
 
 func TestLoadArchive(t testing.TB, tarPath string) (*ImageArchive, error) {

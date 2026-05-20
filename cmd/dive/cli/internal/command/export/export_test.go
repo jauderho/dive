@@ -3,7 +3,7 @@ package export
 import (
 	"testing"
 
-	"github.com/wagoodman/dive/dive/image/docker"
+	"github.com/jauderho/dive/dive/image/docker"
 )
 
 func Test_Export(t *testing.T) {

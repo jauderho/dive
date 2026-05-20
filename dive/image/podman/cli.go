@@ -4,8 +4,8 @@ package podman
 
 import (
 	"fmt"
-	"github.com/wagoodman/dive/internal/log"
-	"github.com/wagoodman/dive/internal/utils"
+	"github.com/jauderho/dive/internal/log"
+	"github.com/jauderho/dive/internal/utils"
 	"io"
 	"os"
 	"os/exec"

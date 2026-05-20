@@ -2,7 +2,7 @@ package view
 
 import (
 	"github.com/awesome-gocui/gocui"
-	"github.com/wagoodman/dive/cmd/dive/cli/internal/ui/v1"
+	"github.com/jauderho/dive/cmd/dive/cli/internal/ui/v1"
 )
 
 type View interface {

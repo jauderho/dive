@@ -2,9 +2,9 @@ package app
 
 import (
 	"fmt"
-	"github.com/wagoodman/dive/cmd/dive/cli/internal/ui/v1"
-	"github.com/wagoodman/dive/cmd/dive/cli/internal/ui/v1/view"
-	"github.com/wagoodman/dive/cmd/dive/cli/internal/ui/v1/viewmodel"
+	"github.com/jauderho/dive/cmd/dive/cli/internal/ui/v1"
+	"github.com/jauderho/dive/cmd/dive/cli/internal/ui/v1/view"
+	"github.com/jauderho/dive/cmd/dive/cli/internal/ui/v1/viewmodel"
 	"golang.org/x/net/context"
 	"regexp"
 

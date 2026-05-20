@@ -3,9 +3,9 @@ package view
 import (
 	"fmt"
 	"github.com/anchore/go-logger"
-	"github.com/wagoodman/dive/cmd/dive/cli/internal/ui/v1/format"
-	"github.com/wagoodman/dive/internal/log"
-	"github.com/wagoodman/dive/internal/utils"
+	"github.com/jauderho/dive/cmd/dive/cli/internal/ui/v1/format"
+	"github.com/jauderho/dive/internal/log"
+	"github.com/jauderho/dive/internal/utils"
 	"strings"
 
 	"github.com/awesome-gocui/gocui"

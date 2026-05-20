@@ -2,7 +2,7 @@ package filetree
 
 import (
 	"fmt"
-	"github.com/wagoodman/dive/internal/log"
+	"github.com/jauderho/dive/internal/log"
 	"sort"
 )
 

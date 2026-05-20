@@ -2,10 +2,10 @@ package adapter
 
 import (
 	"context"
-	"github.com/wagoodman/dive/dive/image"
-	"github.com/wagoodman/dive/internal/bus"
-	"github.com/wagoodman/dive/internal/bus/event/payload"
-	"github.com/wagoodman/dive/internal/log"
+	"github.com/jauderho/dive/dive/image"
+	"github.com/jauderho/dive/internal/bus"
+	"github.com/jauderho/dive/internal/bus/event/payload"
+	"github.com/jauderho/dive/internal/log"
 	"strings"
 	"time"
 )

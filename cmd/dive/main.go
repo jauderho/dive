@@ -22,7 +22,7 @@ package main
 
 import (
 	"github.com/anchore/clio"
-	"github.com/wagoodman/dive/cmd/dive/cli"
+	"github.com/jauderho/dive/cmd/dive/cli"
 )
 
 // applicationName is the non-capitalized name of the application (do not change this)

@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"github.com/anchore/clio"
 	"github.com/spf13/cobra"
-	"github.com/wagoodman/dive/cmd/dive/cli/internal/command/adapter"
-	"github.com/wagoodman/dive/cmd/dive/cli/internal/options"
-	"github.com/wagoodman/dive/dive"
+	"github.com/jauderho/dive/cmd/dive/cli/internal/command/adapter"
+	"github.com/jauderho/dive/cmd/dive/cli/internal/options"
+	"github.com/jauderho/dive/dive"
 )
 
 type buildOptions struct {

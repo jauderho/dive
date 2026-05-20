@@ -3,7 +3,7 @@ package layout
 import (
 	"fmt"
 	"github.com/awesome-gocui/gocui"
-	"github.com/wagoodman/dive/internal/log"
+	"github.com/jauderho/dive/internal/log"
 )
 
 type Constraint func(int) int
