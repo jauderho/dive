@@ -12,7 +12,7 @@ import (
 	"github.com/jauderho/dive/internal/bus/event"
 	"github.com/jauderho/dive/internal/bus/event/parser"
 	"github.com/jauderho/dive/internal/log"
-	"github.com/jauderho/go-partybus"
+	"github.com/wagoodman/go-partybus"
 	"io"
 	"os"
 	"strings"

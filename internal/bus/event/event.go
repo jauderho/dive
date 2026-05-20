@@ -1,7 +1,7 @@
 package event
 
 import (
-	"github.com/jauderho/go-partybus"
+	"github.com/wagoodman/go-partybus"
 )
 
 const (

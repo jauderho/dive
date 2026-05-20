@@ -5,7 +5,7 @@ import (
 	"github.com/jauderho/dive/dive/image"
 	"github.com/jauderho/dive/internal/bus/event"
 	"github.com/jauderho/dive/internal/bus/event/payload"
-	"github.com/jauderho/go-partybus"
+	"github.com/wagoodman/go-partybus"
 	"github.com/jauderho/go-progress"
 )
 

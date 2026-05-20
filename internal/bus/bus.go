@@ -1,6 +1,6 @@
 package bus
 
-import "github.com/jauderho/go-partybus"
+import "github.com/wagoodman/go-partybus"
 
 var publisher partybus.Publisher
 

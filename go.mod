@@ -25,7 +25,7 @@ require (
 	github.com/spf13/afero v1.14.0
 	github.com/spf13/cobra v1.9.1
 	github.com/stretchr/testify v1.10.0
-	github.com/jauderho/go-partybus v0.0.0-20230516145632-8ccac152c651
+	github.com/wagoodman/go-partybus v0.0.0-20230516145632-8ccac152c651
 	github.com/jauderho/go-progress v0.0.0-20230925121702-07e42b3cdba0
 	go.uber.org/atomic v1.11.0
 	golang.org/x/net v0.40.0
