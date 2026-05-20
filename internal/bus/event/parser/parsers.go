@@ -6,7 +6,7 @@ import (
 	"github.com/jauderho/dive/internal/bus/event"
 	"github.com/jauderho/dive/internal/bus/event/payload"
 	"github.com/wagoodman/go-partybus"
-	"github.com/jauderho/go-progress"
+	"github.com/wagoodman/go-progress"
 )
 
 type ErrBadPayload struct {

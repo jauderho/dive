@@ -2,7 +2,7 @@ package payload
 
 import (
 	"context"
-	"github.com/jauderho/go-progress"
+	"github.com/wagoodman/go-progress"
 )
 
 type genericProgressKey struct{}
