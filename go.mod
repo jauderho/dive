@@ -4,7 +4,7 @@ go 1.25.0
 
 require (
 	github.com/anchore/clio v0.1.0
-	github.com/anchore/go-logger v0.0.0-20250318195838-07ae343dd722
+	github.com/anchore/go-logger v0.1.0
 	github.com/awesome-gocui/gocui v1.1.0
 	github.com/awesome-gocui/keybinding v1.0.1-0.20211011072933-86029037a63f
 	github.com/cespare/xxhash/v2 v2.3.0
