@@ -12,8 +12,8 @@ github.com/anchore/fangs v0.0.0-20250402135612-96e29e45f3fe h1:qv/xxpjF5RdKPqZjx
 github.com/anchore/fangs v0.0.0-20250402135612-96e29e45f3fe/go.mod h1:vrcYMDps9YXwwx2a9AsvipM6Fi5H9//9bymGb8G8BIQ=
 github.com/anchore/go-homedir v0.0.0-20250319154043-c29668562e4d h1:gT69osH9AsdpOfqxbRwtxcNnSZ1zg4aKy2BevO3ZBdc=
 github.com/anchore/go-homedir v0.0.0-20250319154043-c29668562e4d/go.mod h1:PhSnuFYknwPZkOWKB1jXBNToChBA+l0FjwOxtViIc50=
-github.com/anchore/go-logger v0.0.0-20250318195838-07ae343dd722 h1:2SqmFgE7h+Ql4VyBzhjLkRF/3gDrcpUBj8LjvvO6OOM=
-github.com/anchore/go-logger v0.0.0-20250318195838-07ae343dd722/go.mod h1:oFuE8YuTCM+spgMXhePGzk3asS94yO9biUfDzVTFqNw=
+github.com/anchore/go-logger v0.1.0 h1:3pE9Sli4SE1I/mtV+2pZXzim+aWj83BRaneVXeMgD3A=
+github.com/anchore/go-logger v0.1.0/go.mod h1:0l63X5VyHqfWQwsNaTmkgXErsfohze3NAFCXFdhSjdQ=
 github.com/andreyvit/diff v0.0.0-20170406064948-c7f18ee00883/go.mod h1:rCTlJbsFo29Kk6CurOXKm700vrz8f0KW0JNfpkRJY/8=
 github.com/awesome-gocui/gocui v0.5.0/go.mod h1:1QikxFaPhe2frKeKvEwZEIGia3haiOxOUXKinrv17mA=
 github.com/awesome-gocui/gocui v1.1.0 h1:db2j7yFEoHZjpQFeE2xqiatS8bm1lO3THeLwE6MzOII=
