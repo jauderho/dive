@@ -58,7 +58,7 @@ type renderParams struct {
 func (tree *FileTree) renderStringTreeBetween(startRow, stopRow int, showAttributes bool) string {
 	// generate a list of nodes to render
 	var params = make([]renderParams, 0)
-	var result string
+	var result strings.Builder
 
 	// visit from the front of the list
 	var paramsToVisit = []renderParams{{node: tree.Root, spaces: []bool{}, showCollapsed: false, isLast: false}}
@@ -119,12 +119,12 @@ func (tree *FileTree) renderStringTreeBetween(startRow, stopRow int, showAttribu
 		currentParams := params[idx]
 
 		if showAttributes {
-			result += currentParams.node.MetadataString() + " "
+			result.WriteString(currentParams.node.MetadataString() + " ")
 		}
-		result += currentParams.node.renderTreeLine(currentParams.spaces, currentParams.isLast, currentParams.showCollapsed)
+		result.WriteString(currentParams.node.renderTreeLine(currentParams.spaces, currentParams.isLast, currentParams.showCollapsed))
 	}
 
-	return result
+	return result.String()
 }
 
 func (tree *FileTree) VisibleSize() int {

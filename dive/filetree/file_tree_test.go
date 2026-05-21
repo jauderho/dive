@@ -3,16 +3,13 @@ package filetree
 import (
 	"fmt"
 	"github.com/stretchr/testify/assert"
+	"slices"
+	"strings"
 	"testing"
 )
 
 func stringInSlice(a string, list []string) bool {
-	for _, b := range list {
-		if b == a {
-			return true
-		}
-	}
-	return false
+	return slices.Contains(list, a)
 }
 
 func AssertDiffType(node *FileNode, expectedDiffType DiffType) error {
@@ -538,11 +535,12 @@ func TestCompareWithAdds(t *testing.T) {
 	}
 
 	if len(failedAssertions) > 0 {
-		str := "\n"
+		var str strings.Builder
+		str.WriteString("\n")
 		for _, value := range failedAssertions {
-			str += fmt.Sprintf("  - %s\n", value.Error())
+			str.WriteString(fmt.Sprintf("  - %s\n", value.Error()))
 		}
-		t.Errorf("Expected no errors when evaluating nodes, got: %s", str)
+		t.Errorf("Expected no errors when evaluating nodes, got: %s", str.String())
 	}
 }
 
@@ -651,11 +649,12 @@ func TestCompareWithChanges(t *testing.T) {
 	}
 
 	if len(failedAssertions) > 0 {
-		str := "\n"
+		var str strings.Builder
+		str.WriteString("\n")
 		for _, value := range failedAssertions {
-			str += fmt.Sprintf("  - %s\n", value.Error())
+			str.WriteString(fmt.Sprintf("  - %s\n", value.Error()))
 		}
-		t.Errorf("Expected no errors when evaluating nodes, got: %s", str)
+		t.Errorf("Expected no errors when evaluating nodes, got: %s", str.String())
 	}
 }
 
@@ -722,11 +721,12 @@ func TestCompareWithRemoves(t *testing.T) {
 	}
 
 	if len(failedAssertions) > 0 {
-		str := "\n"
+		var str strings.Builder
+		str.WriteString("\n")
 		for _, value := range failedAssertions {
-			str += fmt.Sprintf("  - %s\n", value.Error())
+			str.WriteString(fmt.Sprintf("  - %s\n", value.Error()))
 		}
-		t.Errorf("Expected no errors when evaluating nodes, got: %s", str)
+		t.Errorf("Expected no errors when evaluating nodes, got: %s", str.String())
 	}
 }
 

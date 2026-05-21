@@ -81,14 +81,15 @@ func (v *ImageDetails) Setup(body, header *gocui.View) error {
 // 3. a list of inefficient file allocations
 func (v *ImageDetails) Render() error {
 	analysisTemplate := "%5s  %12s  %-s\n"
-	inefficiencyReport := fmt.Sprintf(format.Header(analysisTemplate), "Count", "Total Space", "Path")
+	var inefficiencyReport strings.Builder
+	inefficiencyReport.WriteString(fmt.Sprintf(format.Header(analysisTemplate), "Count", "Total Space", "Path"))
 
 	var wastedSpace int64
 	for idx := 0; idx < len(v.inefficiencies); idx++ {
 		data := v.inefficiencies[len(v.inefficiencies)-1-idx]
 		wastedSpace += data.CumulativeSize
 
-		inefficiencyReport += fmt.Sprintf(analysisTemplate, strconv.Itoa(len(data.Nodes)), humanize.Bytes(uint64(data.CumulativeSize)), data.Path)
+		inefficiencyReport.WriteString(fmt.Sprintf(analysisTemplate, strconv.Itoa(len(data.Nodes)), humanize.Bytes(uint64(data.CumulativeSize)), data.Path))
 	}
 
 	imageNameStr := fmt.Sprintf("%s %s", format.Header("Image name:"), v.imageName)
@@ -113,7 +114,7 @@ func (v *ImageDetails) Render() error {
 			wastedSpaceStr,
 			efficiencyStr,
 			" ", // to avoid an empty line so CursorDown can work as expected
-			inefficiencyReport,
+			inefficiencyReport.String(),
 		}
 
 		v.body.Clear()

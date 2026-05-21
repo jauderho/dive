@@ -1,13 +1,13 @@
 package app
 
 import (
+	context0 "context"
 	"errors"
 	"github.com/awesome-gocui/gocui"
 	"github.com/jauderho/dive/cmd/dive/cli/internal/ui/v1"
 	"github.com/jauderho/dive/cmd/dive/cli/internal/ui/v1/key"
 	"github.com/jauderho/dive/cmd/dive/cli/internal/ui/v1/layout"
 	"github.com/jauderho/dive/cmd/dive/cli/internal/ui/v1/layout/compound"
-	"golang.org/x/net/context"
 	"time"
 )
 
@@ -20,7 +20,7 @@ type app struct {
 }
 
 // Run is the UI entrypoint.
-func Run(ctx context.Context, c v1.Config) error {
+func Run(ctx context0.Context, c v1.Config) error {
 	var err error
 
 	// it appears there is a race condition where termbox.Init() will
@@ -52,7 +52,7 @@ func Run(ctx context.Context, c v1.Config) error {
 	return nil
 }
 
-func newApp(ctx context.Context, gui *gocui.Gui, cfg v1.Config) (*app, error) {
+func newApp(ctx context0.Context, gui *gocui.Gui, cfg v1.Config) (*app, error) {
 	var err error
 	var c *controller
 	var globalHelpKeys []*key.Binding

@@ -10,6 +10,7 @@ import (
 	"github.com/jauderho/dive/cmd/dive/cli/internal/ui/v1/viewmodel"
 	"github.com/jauderho/dive/dive/image"
 	"github.com/jauderho/dive/internal/log"
+	"strings"
 )
 
 // Layer holds the UI objects and data models for populating the lower-left pane.
@@ -369,9 +370,9 @@ func (v *Layer) LayerCount() int {
 
 // KeyHelp indicates all the possible actions a user can take while the current pane is selected.
 func (v *Layer) KeyHelp() string {
-	var help string
+	var help strings.Builder
 	for _, binding := range v.helpKeys {
-		help += binding.RenderKeyHelp()
+		help.WriteString(binding.RenderKeyHelp())
 	}
-	return help
+	return help.String()
 }

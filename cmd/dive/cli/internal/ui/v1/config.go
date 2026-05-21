@@ -1,12 +1,12 @@
 package v1
 
 import (
+	context0 "context"
 	"errors"
 	"fmt"
 	"github.com/jauderho/dive/cmd/dive/cli/internal/ui/v1/key"
 	"github.com/jauderho/dive/dive/filetree"
 	"github.com/jauderho/dive/dive/image"
-	"golang.org/x/net/context"
 	"sync"
 )
 
@@ -63,5 +63,5 @@ func (c *Config) TreeComparer() (filetree.Comparer, error) {
 }
 
 type ContentReader interface {
-	Extract(ctx context.Context, id string, layer string, path string) error
+	Extract(ctx context0.Context, id string, layer string, path string) error
 }

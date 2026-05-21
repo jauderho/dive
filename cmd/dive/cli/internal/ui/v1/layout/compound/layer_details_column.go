@@ -77,7 +77,7 @@ func (cl *LayerDetailsCompoundLayout) Layout(g *gocui.Gui, minX, minY, maxX, max
 	}
 
 	rowHeight := maxY / 3
-	for i := 0; i < 3; i++ {
+	for i := range 3 {
 		if err := cl.layoutRow(g, minX, i*rowHeight, maxX, (i+1)*rowHeight, layouts[i].Name(), layouts[i].Setup); err != nil {
 			return fmt.Errorf("unable to layout %q: %w", layouts[i].Name(), err)
 		}

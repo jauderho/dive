@@ -106,11 +106,11 @@ func (v *Status) Render() error {
 
 // KeyHelp indicates all the possible global actions a user can take when any pane is selected.
 func (v *Status) KeyHelp() string {
-	var help string
+	var help strings.Builder
 	for _, binding := range v.helpKeys {
-		help += binding.RenderKeyHelp()
+		help.WriteString(binding.RenderKeyHelp())
 	}
-	return help
+	return help.String()
 }
 
 func (v *Status) Layout(g *gocui.Gui, minX, minY, maxX, maxY int) error {

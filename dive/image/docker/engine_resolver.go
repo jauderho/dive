@@ -1,10 +1,11 @@
 package docker
 
 import (
+	context0 "context"
 	"fmt"
-	"github.com/spf13/afero"
 	"github.com/jauderho/dive/internal/bus/event/payload"
 	"github.com/jauderho/dive/internal/log"
+	"github.com/spf13/afero"
 	"io"
 	"net/http"
 	"os"
@@ -15,7 +16,6 @@ import (
 	ddocker "github.com/docker/cli/cli/context/docker"
 	ctxstore "github.com/docker/cli/cli/context/store"
 	"github.com/docker/docker/client"
-	"golang.org/x/net/context"
 
 	"github.com/jauderho/dive/dive/image"
 )
@@ -31,7 +31,7 @@ func (r *engineResolver) Name() string {
 	return "docker-engine"
 }
 
-func (r *engineResolver) Fetch(ctx context.Context, id string) (*image.Image, error) {
+func (r *engineResolver) Fetch(ctx context0.Context, id string) (*image.Image, error) {
 	reader, err := r.fetchArchive(ctx, id)
 	if err != nil {
 		return nil, err
@@ -45,7 +45,7 @@ func (r *engineResolver) Fetch(ctx context.Context, id string) (*image.Image, er
 	return img.ToImage(id)
 }
 
-func (r *engineResolver) Build(ctx context.Context, args []string) (*image.Image, error) {
+func (r *engineResolver) Build(ctx context0.Context, args []string) (*image.Image, error) {
 	id, err := buildImageFromCli(afero.NewOsFs(), args)
 	if err != nil {
 		return nil, err
@@ -53,7 +53,7 @@ func (r *engineResolver) Build(ctx context.Context, args []string) (*image.Image
 	return r.Fetch(ctx, id)
 }
 
-func (r *engineResolver) Extract(ctx context.Context, id string, l string, p string) error {
+func (r *engineResolver) Extract(ctx context0.Context, id string, l string, p string) error {
 	reader, err := r.fetchArchive(ctx, id)
 	if err != nil {
 		return err
@@ -66,7 +66,7 @@ func (r *engineResolver) Extract(ctx context.Context, id string, l string, p str
 	return fmt.Errorf("unable to extract from image '%s': %+v", id, err)
 }
 
-func (r *engineResolver) fetchArchive(ctx context.Context, id string) (io.ReadCloser, error) {
+func (r *engineResolver) fetchArchive(ctx context0.Context, id string) (io.ReadCloser, error) {
 	var err error
 	var dockerClient *client.Client
 
@@ -165,8 +165,8 @@ func determineDockerHost() (string, error) {
 	}
 
 	storeConfig := ctxstore.NewConfig(
-		func() interface{} { return &ddocker.EndpointMeta{} },
-		ctxstore.EndpointTypeGetter(ddocker.DockerEndpoint, func() interface{} { return &ddocker.EndpointMeta{} }),
+		func() any { return &ddocker.EndpointMeta{} },
+		ctxstore.EndpointTypeGetter(ddocker.DockerEndpoint, func() any { return &ddocker.EndpointMeta{} }),
 	)
 
 	st := ctxstore.New(cliconfig.ContextStoreDir(), storeConfig)

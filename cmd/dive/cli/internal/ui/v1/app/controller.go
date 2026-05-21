@@ -1,11 +1,11 @@
 package app
 
 import (
+	context0 "context"
 	"fmt"
 	"github.com/jauderho/dive/cmd/dive/cli/internal/ui/v1"
 	"github.com/jauderho/dive/cmd/dive/cli/internal/ui/v1/view"
 	"github.com/jauderho/dive/cmd/dive/cli/internal/ui/v1/viewmodel"
-	"golang.org/x/net/context"
 	"regexp"
 
 	"github.com/awesome-gocui/gocui"
@@ -15,10 +15,10 @@ type controller struct {
 	gui    *gocui.Gui
 	views  *view.Views
 	config v1.Config
-	ctx    context.Context // TODO: storing context in the controller is not ideal
+	ctx    context0.Context // TODO: storing context in the controller is not ideal
 }
 
-func newController(ctx context.Context, g *gocui.Gui, cfg v1.Config) (*controller, error) {
+func newController(ctx context0.Context, g *gocui.Gui, cfg v1.Config) (*controller, error) {
 	views, err := view.NewViews(g, cfg)
 	if err != nil {
 		return nil, err

@@ -10,6 +10,7 @@ import (
 	"github.com/jauderho/dive/internal/log"
 	"github.com/jauderho/dive/internal/utils"
 	"regexp"
+	"strings"
 
 	"github.com/awesome-gocui/gocui"
 	"github.com/jauderho/dive/dive/filetree"
@@ -450,11 +451,11 @@ func (v *FileTree) Render() error {
 
 // KeyHelp indicates all the possible actions a user can take while the current pane is selected.
 func (v *FileTree) KeyHelp() string {
-	var help string
+	var help strings.Builder
 	for _, binding := range v.helpKeys {
-		help += binding.RenderKeyHelp()
+		help.WriteString(binding.RenderKeyHelp())
 	}
-	return help
+	return help.String()
 }
 
 func (v *FileTree) Layout(g *gocui.Gui, minX, minY, maxX, maxY int) error {

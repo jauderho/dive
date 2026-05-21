@@ -1,9 +1,9 @@
 package ci
 
 import (
+	context0 "context"
 	"fmt"
 	"github.com/charmbracelet/lipgloss"
-	"golang.org/x/net/context"
 	"sort"
 	"strconv"
 	"strings"
@@ -76,7 +76,7 @@ func (e Evaluator) isRuleEnabled(rule Rule) bool {
 	return rule.Configuration() != "disabled"
 }
 
-func (e Evaluator) Evaluate(ctx context.Context, analysis *image.Analysis) Evaluation {
+func (e Evaluator) Evaluate(ctx context0.Context, analysis *image.Analysis) Evaluation {
 	for _, rule := range e.Rules {
 		if !e.isRuleEnabled(rule) {
 			e.Results[rule.Key()] = RuleResult{

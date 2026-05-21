@@ -38,14 +38,14 @@ const (
 )
 
 var (
-	Header                func(...interface{}) string
-	Selected              func(...interface{}) string
-	StatusSelected        func(...interface{}) string
-	StatusNormal          func(...interface{}) string
-	StatusControlSelected func(...interface{}) string
-	StatusControlNormal   func(...interface{}) string
-	CompareTop            func(...interface{}) string
-	CompareBottom         func(...interface{}) string
+	Header                func(...any) string
+	Selected              func(...any) string
+	StatusSelected        func(...any) string
+	StatusNormal          func(...any) string
+	StatusControlSelected func(...any) string
+	StatusControlNormal   func(...any) string
+	CompareTop            func(...any) string
+	CompareBottom         func(...any) string
 	reset                 = color.New(color.Reset).Sprint("")
 )
 
@@ -78,20 +78,14 @@ func RenderHeader(title string, width int, selected bool) string {
 	if selected {
 		body := Header(fmt.Sprintf("%s%s ", selectStr, title))
 		bodyLen := len(vtclean.Clean(body, false))
-		repeatCount := width - bodyLen - 2
-		if repeatCount < 0 {
-			repeatCount = 0
-		}
+		repeatCount := max(width-bodyLen-2, 0)
 		return fmt.Sprintf("%s%s%s%s\n", selectedLeftBracketStr, body, selectedRightBracketStr, strings.Repeat(selectedFillStr, repeatCount))
 		// return fmt.Sprintf("%s%s%s%s\n", Selected(selectedLeftBracketStr), body, Selected(selectedRightBracketStr), Selected(strings.Repeat(selectedFillStr, width-bodyLen-2)))
 		// return fmt.Sprintf("%s%s%s%s\n", Selected(selectedLeftBracketStr), body, Selected(selectedRightBracketStr), strings.Repeat(selectedFillStr, width-bodyLen-2))
 	}
 	body := Header(fmt.Sprintf(" %s ", title))
 	bodyLen := len(vtclean.Clean(body, false))
-	repeatCount := width - bodyLen - 2
-	if repeatCount < 0 {
-		repeatCount = 0
-	}
+	repeatCount := max(width-bodyLen-2, 0)
 	return fmt.Sprintf("%s%s%s%s\n", leftBracketStr, body, rightBracketStr, strings.Repeat(fillStr, repeatCount))
 }
 

@@ -52,12 +52,12 @@ func NewNode(parent *FileNode, name string, data FileInfo) (node *FileNode) {
 
 // renderTreeLine returns a string representing this FileNode in the context of a greater ASCII tree.
 func (node *FileNode) renderTreeLine(spaces []bool, last bool, collapsed bool) string {
-	var otherBranches string
+	var otherBranches strings.Builder
 	for _, space := range spaces {
 		if space {
-			otherBranches += noBranchSpace
+			otherBranches.WriteString(noBranchSpace)
 		} else {
-			otherBranches += branchSpace
+			otherBranches.WriteString(branchSpace)
 		}
 	}
 
@@ -71,7 +71,7 @@ func (node *FileNode) renderTreeLine(spaces []bool, last bool, collapsed bool) s
 		collapsedIndicator = collapsedItem
 	}
 
-	return otherBranches + thisBranch + collapsedIndicator + node.String() + newLine
+	return otherBranches.String() + thisBranch + collapsedIndicator + node.String() + newLine
 }
 
 // Copy duplicates the existing node relative to a new parent node.
