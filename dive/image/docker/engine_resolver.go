@@ -11,11 +11,12 @@ import (
 	"os"
 	"strings"
 
+	cerrdefs "github.com/containerd/errdefs"
 	cliconfig "github.com/docker/cli/cli/config"
 	"github.com/docker/cli/cli/connhelper"
 	ddocker "github.com/docker/cli/cli/context/docker"
 	ctxstore "github.com/docker/cli/cli/context/store"
-	"github.com/docker/docker/client"
+	"github.com/moby/moby/client"
 
 	"github.com/jauderho/dive/dive/image"
 )
@@ -83,14 +84,12 @@ func (r *engineResolver) fetchArchive(ctx context0.Context, id string) (io.ReadC
 		if err != nil {
 			return nil, fmt.Errorf("failed to get docker connection helper: %w", err)
 		}
-		clientOpts = append(clientOpts, func(c *client.Client) error {
-			httpClient := &http.Client{
-				Transport: &http.Transport{
-					DialContext: helper.Dialer,
-				},
-			}
-			return client.WithHTTPClient(httpClient)(c)
-		})
+		httpClient := &http.Client{
+			Transport: &http.Transport{
+				DialContext: helper.Dialer,
+			},
+		}
+		clientOpts = append(clientOpts, client.WithHTTPClient(httpClient))
 
 		clientOpts = append(clientOpts, client.WithHost(host))
 		clientOpts = append(clientOpts, client.WithDialContext(helper.Dialer))
@@ -110,7 +109,7 @@ func (r *engineResolver) fetchArchive(ctx context0.Context, id string) (io.ReadC
 	_, err = dockerClient.ImageInspect(ctx, id)
 	if err != nil {
 		// check if the error is due to the image not existing locally
-		if client.IsErrNotFound(err) {
+		if cerrdefs.IsNotFound(err) {
 			mon := payload.GetGenericProgressFromContext(ctx)
 			if mon != nil {
 				mon.AtomicStage.Set("attempting to pull")
