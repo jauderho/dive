@@ -6,10 +6,19 @@ on:
         description: tag the latest commit on main with the given version (prefixed with v)
         required: true
 
+# restrictive default; the release job below opts into the extra scopes it needs
+permissions:
+  contents: read
+
 jobs:
   quality-gate:
     environment: release
     runs-on: ubuntu-latest
+    permissions:
+      # for checking out the repo
+      contents: read
+      # for reading the conclusion of the validation check runs
+      checks: read
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 

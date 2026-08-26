@@ -6,6 +6,11 @@ on:
       - main
   pull_request:
 
+# no job in this workflow publishes anything; the artifact and cache actions
+# authenticate with the runtime token rather than GITHUB_TOKEN.
+permissions:
+  contents: read
+
 jobs:
   Static-Analysis:
     # Note: changing this job name requires making the same update in the .github/workflows/release.yaml pipeline
