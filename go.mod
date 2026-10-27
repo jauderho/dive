@@ -13,7 +13,7 @@ require (
 	github.com/docker/cli v29.9.2+incompatible
 	github.com/dustin/go-humanize v1.1.0
 	github.com/fatih/color v1.19.0
-	github.com/gkampitakis/go-snaps v0.5.23
+	github.com/gkampitakis/go-snaps v0.5.24
 	github.com/google/go-cmp v0.7.0
 	github.com/google/shlex v0.0.0-20191202100458-e7afc7fbc510
 	github.com/google/uuid v1.6.0
