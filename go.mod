@@ -3,7 +3,7 @@ module github.com/jauderho/dive
 go 1.27.0
 
 require (
-	github.com/anchore/clio v0.1.1
+	github.com/anchore/clio v0.1.2
 	github.com/anchore/go-logger v0.2.0
 	github.com/awesome-gocui/gocui v1.1.0
 	github.com/awesome-gocui/keybinding v1.0.1-0.20211011072933-86029037a63f
@@ -62,7 +62,7 @@ require (
 	github.com/go-viper/mapstructure/v2 v2.5.0 // indirect
 	github.com/goccy/go-yaml v1.19.2 // indirect
 	github.com/google/pprof v0.0.0-20260825171938-4d453200e7d9 // indirect
-	github.com/gookit/color v1.6.1 // indirect
+	github.com/gookit/color v1.6.3 // indirect
 	github.com/iancoleman/strcase v0.3.0 // indirect
 	github.com/inconshreveable/mousetrap v1.1.0 // indirect
 	github.com/kr/pretty v0.3.1 // indirect
@@ -102,7 +102,7 @@ require (
 	go.opentelemetry.io/otel/metric v1.46.0 // indirect
 	go.opentelemetry.io/otel/trace v1.46.0 // indirect
 	go.yaml.in/yaml/v3 v3.0.5 // indirect
-	golang.org/x/sys v0.47.0 // indirect
-	golang.org/x/term v0.45.0 // indirect
+	golang.org/x/sys v0.49.0 // indirect
+	golang.org/x/term v0.47.0 // indirect
 	golang.org/x/text v0.41.0 // indirect
 )
