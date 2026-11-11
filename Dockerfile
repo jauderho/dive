@@ -1,4 +1,4 @@
-FROM alpine:3.24.3@sha256:be2656061b536c1883c4034790e21d0a09c5aaaf51968b89368a3c0371ea2c9a AS docker-cli
+FROM alpine:3.24.4@sha256:f59abe656b692d901e184be3445e084786602108599d2a51d229c0f5a48c71bf AS docker-cli
 
 ARG DOCKER_CLI_VERSION=${DOCKER_CLI_VERSION}
 # curl is used instead of busybox wget because busybox wget cannot be told to refuse a
@@ -10,7 +10,7 @@ RUN apk add --no-cache curl && \
     tar -xzf - docker/docker --strip-component=1 -C /usr/local/bin
 
 
-FROM alpine:3.24.3@sha256:be2656061b536c1883c4034790e21d0a09c5aaaf51968b89368a3c0371ea2c9a AS base
+FROM alpine:3.24.4@sha256:f59abe656b692d901e184be3445e084786602108599d2a51d229c0f5a48c71bf AS base
 
 # fetched in a separate stage so that curl and its apk metadata stay out of the published image
 COPY --from=docker-cli /usr/local/bin/docker /usr/local/bin/docker
